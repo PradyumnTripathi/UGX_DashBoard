@@ -1,0 +1,95 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200vh;
+    background-color: #f0f4f8;
+  }
+  
+  .dashboard {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    width: 90%;
+  }
+  
+  .panel {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    position: relative;
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  
+  .panel:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.15);
+  }
+  
+  .panel i {
+    font-size: 36px;
+    margin-bottom: 10px;
+    color: #ffffff;
+    padding: 10px;
+    border-radius: 50%;
+  }
+  
+  .panel span {
+    font-size: 24px;
+    font-weight: bold;
+    display: block;
+    margin-top: 5px;
+  }
+  
+  /* Unique colors for each panel */
+  .fans i {
+    background-color: #4CAF50;
+  }
+  
+  .light i {
+    background-color: #FFC107;
+  }
+  
+  .refrigerator i {
+    background-color: #00BCD4;
+  }
+  
+  .ac i {
+    background-color: #9C27B0;
+  }
+  
+  .consumption i {
+    background-color: #FF5722;
+  }
+  
+  .current-consumption i {
+    background-color: #607D8B;
+  }
+  
+  .large-chart {
+    grid-column: span 3;
+    height: 100px;
+    background-color: #f9f9fb;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .icon {
+    width: 100px;  
+    height: 100px; 
+    object-fit: contain; 
+    margin-bottom: 10px; 
+  }
+  
